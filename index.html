@@ -7,22 +7,20 @@
     </head>
     <body>
         
-
-        <input type="text" size="10" id="Text1" value="0" />的
-        <input type="text" size="10" id="Text2" value="2" />次方等于
-        <input type="text" size="20" id="Text3" value="0" />
+        <input type="text" size="20" id="Text" value="None" />
         <input type="button" value="中午吃什么！！！" onclick="Calc()" />
 
         <textarea rows="9" cols="53" id="list" style="display:none">
             馄饨 拉面 烩面 热干面 刀削面 油泼面 炸酱面 炒面 重庆小面 米线 酸辣粉 土豆粉 螺狮粉 凉皮儿 麻辣烫 肉夹馍 羊肉汤 炒饭 盖浇饭 卤肉饭 烤肉饭 黄焖鸡米饭 驴肉火烧 川菜 麻辣香锅 火锅 酸菜鱼 烤串 披萨 烤鸭 汉堡 炸鸡 寿司 蟹黄包 煎饼果子 生煎 炒年糕
         </textarea>
 		
-		<script type="text/javascript">
+        <script type="text/javascript">
+        var clas=['语文','数学','英语','体育','物理','化学','地理'];
+	    
         function Calc() {
-            var x = parseInt(document.getElementById("Text1").value);
-            var y = parseInt(document.getElementById("Text2").value);
-            var resultValue = Math.pow(x, y);
-            document.getElementById("Text3").value = resultValue;
+            // 0-6之间取随机取一个
+            var x=Math.floor(Math.random()*(6+1-0)+0);
+            document.getElementById("Text").value = clas[x];
         }
         </script>
 
