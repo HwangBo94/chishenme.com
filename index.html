@@ -1,21 +1,83 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>吃饭选择网</title>
-		<link rel="stylesheet" href="styles/style.css">
-		<script src="javascript/javascript.js"></script>
-    </head>
-    <body>
-        
-        <input type="text" size="20" id="Text" value="None" />
-        <input type="button" value="中午吃什么！！！" onclick="Calc()" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>吃饭选择网</title>
 
-		
+<style type="text/css">
+
+body{ background: #3a4954}
+#tagbox{position:relative;margin:20px auto 0px;width:600px;height:500px;background:#3a4954;}
+#tagbox a{position:absolute;padding:3px 6px;font-family:Microsoft YaHei;color:#fff;TOP:0px;font-weight:bold;text-decoration:none;left:0px}
+#tagbox a:hover{border:#eee 1px solid;background:#000;}
+#tagbox .blue{color:blue}
+#tagbox .red{color:red}
+#tagbox .yellow{color:yellow}
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<div id="tagbox">
+	<a href="#">馄饨</a> 
+	<a class="red" href="#">拉面</a> 
+	<a href="#">热干面</a> 
+	<a href="#">刀削面</a> 
+	<a class="blue" href="#">油泼面</a> 
+	<a href="#">炸酱面</a> 
+	<a class="red" href="#">炒面</a> 
+	<a class="yellow" href="#">重庆小面</a> 
+	<a href="#">米线</a> 
+	<a class="red" href="#">酸辣粉</a> 
+	<a href="#">土豆粉</a> 
+	<a class="blue" href="#">螺狮粉</a> 
+	<a class="blue" href="#">凉皮儿</a>
+	<a class="red" href="#">麻辣烫</a> 
+	<a class="yellow" href="#">肉夹馍</a>
+	<a class="yellow" href="#">羊肉汤</a> 
+	<a class="blue" href="#">炒饭</a>
+	<a class="yellow" href="#">盖浇饭</a>
+	<a class="blue" href="#">卤肉饭</a> 
+	<a class="blue" href="#">烤肉饭</a> 
+	<a class="red" href="#">黄焖鸡米饭</a> 
+	<a href="#">驴肉火烧</a> 
+	<a href="#">川菜</a> 
+	<a class="yellow" href="#">麻辣香锅</a> 
+	<a href="#">火锅</a> 
+	<a href="#">酸菜鱼</a> 
+	<a class="blue" href="#">烤串</a> 
+	<a class="red" href="#">披萨</a> 
+	<a class="red" href="#">烤鸭</a> 
+	<a class="blue" href="#">汉堡</a> 
+	<a href="#">炸鸡</a> 
+	<a class="blue" href="#">寿司</a> 
+	<a class="blue" href="#">蟹黄包</a> 
+	<a href="#">煎饼果子</a> 
+	<a href="#">生煎</a> 
+	<a href="#">炒年糕</a> 
+	<a ref="#">学校食堂</a> 
+	<a href="#">桂花糕</a> 
+	<a href="#">虾饺</a> 
+	<a class="red" href="#">二锅头</a> 
+	<a class="yellow" href="#">粥</a> 
+	<a class="yellow" href="#">泡面</a> 
+	<a class="yellow" href="#">不吃</a> 
+</div>
+<div style="text-align:center; padding-top:30px;">
+
+
+    <tr><input type="button" style="font-size: 50px; text-align:center;" value="中午吃什么！！！" onclick="Calc()" /></tr>
+    <br>
+    <tr><input type="text" style="font-size: 50px; text-align:center;" size="10" id="Text" value="None" /></tr>
+    
         <script type="text/javascript">
         var clas=['馄饨','拉面','热干面','刀削面','油泼面','炸酱面','炒面','重庆小面',
          '米线', '酸辣粉', '土豆粉', '螺狮粉', '凉皮儿', '麻辣烫' ,'肉夹馍', '羊肉汤',
          '炒饭', '盖浇饭', '卤肉饭', '烤肉饭', '黄焖鸡米饭', '驴肉火烧', '川菜', '麻辣香锅',
-         '火锅', '酸菜鱼', '烤串', '披萨', '烤鸭', '汉堡', '炸鸡', '寿司', '蟹黄包', '煎饼果子', '生煎', '炒年糕'];
+         '火锅', '酸菜鱼', '烤串', '披萨', '烤鸭', '汉堡', '炸鸡', '寿司', '蟹黄包', '煎饼果子', '生煎', '炒年糕',
+         '不吃','学校食堂','桂花糕','虾饺','二锅头','泡面','粥'];
 	    
         function Calc() {
             var selectednum=clas.length;
@@ -23,6 +85,7 @@
             document.getElementById("Text").value = clas[x];
         }
         </script>
-
-    </body>
+</div>
+</body>
 </html>
+
